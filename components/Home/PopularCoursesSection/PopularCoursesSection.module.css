@@ -1,0 +1,34 @@
+/* purgecss start ignore */
+.pop_course_section {
+  margin-top: 4rem;
+}
+.pop_course_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+  width: 100%;
+}
+.btn {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #f9fafb;
+
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+/* purgecss end ignore */

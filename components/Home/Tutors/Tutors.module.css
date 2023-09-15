@@ -1,0 +1,26 @@
+/* purgecss start ignore */
+.tutor_section {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 6rem;
+  gap: 22px;
+}
+.tutors {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .tutor_section {
+    padding: 0;
+  }
+  .tutors {
+    gap: 80px;
+  }
+}
+/* purgecss end ignore */

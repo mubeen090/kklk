@@ -1,0 +1,147 @@
+/* purgecss start ignore */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+.testimonails_container {
+  padding: 2rem 0;
+  background-color: hsl(210, 46%, 95%);
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(217, 19%, 35%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.card_head {
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.card_head > .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.title {
+  opacity: 0.5;
+  color: rgb(0, 0, 86);
+}
+
+.card_heading {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card_details {
+  color: hsl(0, 0%, 100%);
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.card_1 {
+  grid-column: 1/3;
+  background-color: hsl(263, 55%, 52%);
+  /* background-image: url("./media/bg-pattern-quotation.svg"); */
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+
+.card_2 {
+  grid-column: 3/4;
+}
+
+.card_3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card_3 > .card_head,
+.card_3 > .card_heading,
+.card_3 > .card_details {
+  color: hsl(217, 19%, 35%);
+}
+
+.card_4 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card_5 {
+  grid-row: -1/1;
+  grid-column: 4/5;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card_5 > .card_head,
+.card_5 > .card_heading,
+.card_5 > .card_details {
+  color: hsl(217, 19%, 35%);
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 20px;
+  }
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    width: 95%;
+    grid-gap: 15px;
+  }
+  .card_1 {
+    grid-column: 1/3;
+  }
+  .card_2 {
+    grid-column: 3/4;
+  }
+  .card_5 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax (auto, auto);
+  }
+  .card {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}
+/* purgecss end ignore */
